@@ -1,0 +1,487 @@
+/*CSS de la página Xaviseries*/
+
+.body1 {
+    /*Body del indice */
+    background-image: url("Imagenes/Background2.jpg");
+
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+
+}
+
+.body2 {
+    /*Body de la Pagina1(Formulario*/
+    color: white;
+    background-image: url("Imagenes/Background2.jpg");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+}
+
+.body3 {
+    /*Body de las páginas 2,3 y 4 */
+    background-image: url("Imagenes/Background2.jpg");
+    color: white;
+    font-family: Arial;
+    margin: 50px;
+    text-align: center;
+}
+
+
+#titulo {
+    /* Utilizada para el titulo de la pagina de inicio*/
+    text-align: center;
+    font-size: 45px;
+    font-weight: 1000;
+    font-style: italic;
+    font-family: monospace;
+}
+
+#tituloform {
+    /*Titulo del form*/
+    text-align: center;
+}
+
+.imgtopseries {
+    /*Imagenes en top series, definido en gran parte para facilitar el responsive*/
+    width: 1000px;
+    height: 500px;
+}
+
+.contenido {
+    /*Esto es usado para los parrafos que quiero alinear al centro */
+    text-align: center;
+
+}
+
+.justificado {
+    /*Esto es usado para los parrafos que quiero justificar */
+    text-align: justify;
+}
+
+.centro {
+    /*Esto es usado para las fotos o div que deseo centrar */
+    text-align: center;
+}
+
+.borde {
+    /*Utilizado para eliminar el borde a los videos de youtube */
+    border: 0px;
+
+}
+
+.fotoserie {
+    /*Utilizado para las fotos de la pagina 3 con tal de facilitar el responsive*/
+    width: 250px;
+    height: 150px;
+}
+
+#spoileralert {
+    /*Utilizado para la foto de spoiler alert la cual no encontraba manera de editarla con el resposive de manera directa y*/
+    text-align: center;
+}
+
+.Blanco {
+    /*Utilizado para que el color del texto sea blanco, sobretodo utilizado para las palabras que llevan un link */
+    color: white;
+}
+
+#formulario {
+    /*Utilizado en el form del formulario para darle un margen grande y que quede todo mas en el centro */
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.contenidop3 {
+    /*Utilizado para dar un mayor margen a las paginas y que quede mas centrado */
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.contenidop4 {
+    /*Utilizado para dar un mayor margen a las paginas y que quede mas centrado */
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.margenhr {
+    /*Utilizado para darle un margen a los hr */
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.gray {
+    /*Utilizado para que el texto del copyright sea gris*/
+    color: gray;
+}
+
+details.spoiler::after {
+    /*Utilizado para tapar el texto que contiene spoilers */
+    content: var(--hidden);
+    filter: blur(4px);
+}
+
+details[open]::after {
+    /*Utilizado para la gente que quiere ver ese texto lo vea tras clickar en el  */
+    display: none;
+}
+
+.der {
+    /*Usado para alinear las redes sociales a la derecha en el formulario */
+    color: gray;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.margen2 {
+    /* Utilizado para separar las fotos de las paginas en el indice*/
+    margin-right: 85px;
+}
+
+
+#logoindice {
+    /*Utilizado para atacar unicamente al logo en cuanto al responsive*/
+    position: fixed;
+}
+
+
+/*nav principal y nav secundario */
+.izquierda {
+    position: fixed;
+    top: 150px;
+    left: 22px;
+}
+
+.izquierda.hidden {
+    display: none;
+}
+
+#menu.mobile:not(.hidden) {
+    display: none;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.logo {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+.mobile {
+    margin-bottom: 40px;
+}
+
+#menu {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.izquierda.hidden {
+    display: none;
+}
+
+#menu.mobile.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Mostrar elementos del menú según la clase "mobile" y la anchura de la ventana */
+@media only screen and (max-width: 1300px) {
+    #menu.mobile {
+        display: block;
+    }
+
+    .izquierda {
+        display: none;
+    }
+}
+
+/*responsive*/
+
+
+/*index*/
+
+@media screen and (max-width: 1670px) {
+
+    .margen2 {
+        width: 230px;
+        height: 150px;
+
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .margen2 {
+        width: 400px;
+        height: 250px;
+        margin-bottom: 40px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+
+    .margen2 {
+        margin-right: 30px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 180px;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    #titulo {
+        margin-top: 0.5em;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .margen2 {
+        margin-bottom: 1em;
+    }
+
+    .redes {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+
+    .margen2 {
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 180px;
+        height: 130px;
+
+    }
+
+}
+
+/*formulario*/
+
+@media only screen and (max-width: 1770px) {
+
+    #formulario {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+    #formulario {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #tituloform {
+
+        text-align: center;
+
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+    #logoindice {
+        position: relative;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .body2 {
+        margin: auto;
+    }
+
+    #tituloform {
+
+        text-align: center;
+
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+
+
+/*Top10*/
+@media screen and (max-width: 1670px) {
+
+    .imgtopseries {
+        width: 700px;
+        height: 400px;
+
+    }
+
+}
+
+@media screen and (max-width: 1270px) {
+
+    .imgtopseries {
+        width: 500px;
+        height: 300px;
+
+    }
+
+}
+
+@media screen and (max-width: 934px) {
+
+    .imgtopseries {
+        width: 300px;
+        height: 200px;
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .imgtopseries {
+        width: 150px;
+        height: 100px;
+
+    }
+
+}
+
+/*Sinopsis*/
+@media screen and (max-width: 1200px) {
+
+    .contenidop3 iframe {
+        width: 270px;
+        height: 175px;
+    }
+
+    .margenhr {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .contenidop3 iframe {
+        width: 225px;
+        height: 200px;
+    }
+
+    .fotoserie {
+        width: 180px;
+        height: 150px;
+    }
+
+    .contenidop3 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .margenhr {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+
+/*Opinion Personal*/
+
+@media screen and (max-width: 1750px) {
+    .contenidop4 iframe {
+        width: 400px;
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .contenidop4 iframe {
+        width: 320px;
+        height: 260px;
+    }
+
+    .contenidop4 {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    #spoileralert p {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    .contenidop4 iframe {
+        width: 240px;
+        height: 200px;
+    }
+
+    .contenidop4 {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #spoileralert p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 590px) {
+
+    .contenidop4 iframe {
+        width: 220px;
+        height: 150px;
+    }
+
+    .contenidop4 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #spoileralert p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #spoileralert img {
+
+        width: 250px;
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html><!--Formulario-->
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xaviseries</title>
+    <link rel="stylesheet" type="text/css" href="../Inicio.css">
+    <link rel="shortcut icon" href="../Imagenes/X.png">
+    <script src='../menu.js'></script>
+
+</head>
+
+<body class="body2"><!--Body utilizado unicamente para el Formulario-->
+    <header><!--Header donde tenemos el logo y el titulo de la pagina, con el tiempo el logo pasará de estar en la izquierda a centrarse, exactamente en 1300px-->
+        <div id="logoindice"><a href="../Index.html"><img src="../Imagenes/Logo.png" width="150" height="100"
+                    alt=""></a> <!--Logo de la pagina que lleva al menu principal-->
+        </div>
+        <h1 id="tituloform">FORMULARIO DE SATISFACCIÓN</h1><br><br>
+    </header>
+
+
+    <nav class="izquierda"><!--Menu utilizado de normal-->
+        <div class="logoContainer">
+            <div><a href="Pagina1.html"><img class="logo" src="../Imagenes/Formulario.jpg" alt=""></a></div>
+            <div><a href="Pagina2.html"><img class="logo" src="../Imagenes/Topseries.png" alt=""></a></div>
+            <div><a href="Pagina3.html"><img class="logo" src="../Imagenes/sinopsis.png" alt=""></a></div>
+            <div><a href="Pagina4.html"><img class="logo" src="../Imagenes/Opinionpersonal.png" alt=""></a></div>
+        </div>
+    </nav>
+    <nav id="menu" class="hidden"><!--Menu utilizado cuando la pantalla tiene menos de 1300px-->
+        <div class="mobile">
+            <div class="mobile-icon">&#9776;</div>
+            <select onchange="location = this.value;">
+                <option value="">Menú</option>
+                <option value="Pagina1.html">Formulario</option>
+                <option value="Pagina2.html">Top series</option>
+                <option value="Pagina3.html">Sinopsis</option>
+                <option value="Pagina4.html">Opinión personal</option>
+            </select>
+            <br><br>
+        </div>
+    </nav>
+    <main id="formulario"> <!--Main usado para el formulario-->
+        <form action="#" method="post"><!--Form utilizado para mandar los datos a la url #-->
+            <fieldset>
+                <legend>Información personal</legend>
+                Nombre: <input name="nombre" size="15" maxlength="20" type="text" placeholder="Pedro"
+                    required>(Obligatorio)<br><br><!--Nombre-->
+                Apellidos: <input name="apellidos" size="20" maxlength="30" type="text" placeholder="Ramirez Sanchez"
+                    required>(Obligatorio)<br><br><!--Apellidos-->
+                Correo electronico: <input name="Correo" size="20" maxlength="30" type="email"
+                    placeholder="Correo@gmail.com" required>(Obligatorio)<br><br><!--Email-->
+                Fecha de nacimiento: <input type="date" name="nacimineto"
+                    required>(Obligatorio)<br><br><!--Fecha de nacimiento-->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Ayudame a mejorar</legend>
+                Sugerencias: <br> <textarea cols="30" rows="5"
+                    placeholder="Escribe aquí..."></textarea><br><br><!--Sugerencias para la página web-->
+                Videojuego favorito:<!--Que le interesa al lector del blog-->
+                <br><select>
+                    <option value="A">League of legends</option>
+                    <option value="B">Valorant</option>
+                    <option value="C">TFT</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Verificaciones y calificación</legend>
+                <br> Desea recibir notificaciones del blog sobre noticias de
+                series?<!--Recibir correos de informacion, estará aceptada por defecto-->
+                <input type="checkbox" checked> <br> <br>
+                Valoración:<select><!--La valoracion dada a la pagina, estará en un 5 por defecto-->
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option selected value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <p> Accepto los terminos del contacto de licencia de enviamiento de informacion </p>
+                <!--Si acepta dichos terminos, que estarán aceptados por defecto-->
+                <p>
+                    Acepto<input type="radio" name="Licencia" required><br>
+                    no acepto <input checked type="radio" name="Licencia">
+                </p>
+            </fieldset>
+            <p class="centro"> <input type="submit" value="enviar datos"> <input type="reset" value="borrar datos"></p>
+            <!--Dos botones, uno enviará los datos a la url # y el otro los borrará enteros-->
+        </form>
+    </main>
+    <footer><!--Redes sociales y su copyright-->
+        <div class="der">
+            <p>Copyright 2022. Realizado por Xavier Aibar Martínez</p>
+            <a href="https://twitter.com/___xaviii___"><img src="../Imagenes/Twitter.png" width="40" height="40"
+                    alt=""></a>
+            <a href="https://www.instagram.com/___xaviii___/"><img src="../Imagenes/ig.png" width="40" height="40"
+                    alt=""></a>
+            <a href="https://www.facebook.com/xavier.aibarmartinez.7"><img src="../Imagenes/facebook.png" width="40"
+                    height="40" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCPHedIfG48Pe9uKYHnFu3pg"><img src="../Imagenes/yt.png" width="40"
+                    height="40" alt=""></a>
+        </div>
+    </footer>
+</body>
+
+</html>
